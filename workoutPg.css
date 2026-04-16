@@ -21,18 +21,21 @@
     text-decoration-thickness: 2px;
     text-decoration-color: #0058ff;
 }
+.no-equipment-container,.with-equipment-container{
+    display: none;
+}
 .exercise-container-1,.exercise-container-2{
     margin-top: 30px;
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
-    padding: 10px 40px;
+    padding: 10px 50px;
 }
 .exercise-card{
     position: relative;
-    height: 300px;
-    max-width: 350px;
+    height: 250px;
+    max-width: 300px;
     border: 2px solid #0058ff;
     border-radius: 5px;
     cursor: pointer;

@@ -81,21 +81,57 @@ const workouts = [
 ];
 
 
-for(let i=0; i<workouts.length; i++){
-    document.querySelector(".exercise-container-1").innerHTML += ` <div class="exercise-card">
-                <div class="img-container">
-                    <img src="${workouts[i].muscleImg}" alt="${workouts[i].muscleName}" class="workout-img">
-                </div>
-                <div class="caption-container">
-                    <p class="workout-caption">${workouts[i].muscleName}</p>
-                </div>
-            </div>`
-    document.querySelector(".exercise-container-2").innerHTML += ` <div class="exercise-card">
-                <div class="img-container">
-                    <img src="${workouts[i].muscleImg}" alt="${workouts[i].muscleName}" class="workout-img">
-                </div>
-                <div class="caption-container">
-                    <p class="workout-caption">${workouts[i].muscleName}</p>
-                </div>
-            </div>`
+const container1 = document.querySelector(".exercise-container-1");
+const container2 = document.querySelector(".exercise-container-2");
+
+if (container1 && container2) {
+    for(let i=0; i<workouts.length; i++){
+        container1.innerHTML += ` <div class="exercise-card">
+                    <div class="img-container">
+                        <img src="${workouts[i].muscleImg}" alt="${workouts[i].muscleName}" class="workout-img">
+                    </div>
+                    <div class="caption-container">
+                        <p class="workout-caption">${workouts[i].muscleName}</p>
+                    </div>
+                </div>`
+        container2.innerHTML += ` <div class="exercise-card">
+                    <div class="img-container">
+                        <img src="${workouts[i].muscleImg}" alt="${workouts[i].muscleName}" class="workout-img">
+                    </div>
+                    <div class="caption-container">
+                        <p class="workout-caption">${workouts[i].muscleName}</p>
+                    </div>
+                </div>`
+    }
 }
+
+function showNoEquipment(){
+    const noEq = document.querySelector(".no-equipment-container");
+    const withEq = document.querySelector(".with-equipment-container");
+    if (noEq && withEq) {
+        noEq.style.display = "block";
+        withEq.style.display = "none";
+    }
+}
+
+function showWithEquipment(){
+    const noEq = document.querySelector(".no-equipment-container");
+    const withEq = document.querySelector(".with-equipment-container");
+    if (noEq && withEq) {
+        noEq.style.display = "none";
+        withEq.style.display = "block";
+    }
+}
+
+function handleHashChange() {
+    if (window.location.hash === "#with-equipment") {
+        showWithEquipment();
+    } else if (window.location.hash === "#no-equipment" || window.location.pathname.includes("workout.html")) {
+        showNoEquipment();
+    }
+}
+
+// Run on load to set initial state
+window.addEventListener("DOMContentLoaded", handleHashChange);
+// Run when hash changes (e.g. clicking the links in workout.html navbar)
+window.addEventListener("hashchange", handleHashChange);
