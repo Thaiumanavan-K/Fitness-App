@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness App</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="workoutPg.css">
+</head>
+<body>  
+    <nav>
+        <h1><span style="color: #0058ff;">Fitness</span>App</h1>
+            <ul>
+                <li><a href="index.html" class="navbar-tab">Home</a></li>
+                <li><a href="" class="navbar-tab active no-event-tab">Workout</a>
+                <ul class="dropdown1">
+                    <li><a href="#no-equipment" class="dropdown-tab">No Equipment</a></li>
+                    <li><a href="#with-equipment" class="dropdown-tab">With Equipment</a></li>
+                </ul>
+                </li>
+                <li><a href="" class="navbar-tab no-event-tab">Plans</a>
+                <ul class="dropdown2">
+                    <li><a href="" class="dropdown-tab">Generate Plan</a></li>
+                    <li><a href="" class="dropdown-tab">My Plans</a></li>
+                </ul>
+                </li>
+                <li><a href="about.html" class="navbar-tab">About</a></li>
+            </ul>
+    </nav>
+    <main class="workout-main">
+        <div class="heading-container" id="no-equipment">
+            <p class="section-heading">No Equipment</p>
+        </div>
+        <div class="exercise-container-1">       
+        </div>
+        <div class="heading-container" id="with-equipment">
+            <p class="section-heading">With Equipment</p>
+        </div>
+        <div class="exercise-container-2">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
