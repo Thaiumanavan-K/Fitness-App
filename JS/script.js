@@ -1,81 +1,81 @@
 const workouts = [
     {
-        muscleImg: "WorkoutImages/neck.webp",
+        muscleImg: "../Images/WorkoutImages/neck.webp",
         muscleName: "Neck"
     },
     {
-        muscleImg: "WorkoutImages/traps_0.webp",
+        muscleImg: "../Images/WorkoutImages/traps_0.webp",
         muscleName: "Traps"
     },{
-        muscleImg: "WorkoutImages/shoulders_0.webp",
+        muscleImg: "../Images/WorkoutImages/shoulders_0.webp",
         muscleName: "Shoulders"
     },
     {
-        muscleImg: "WorkoutImages/chest_0.webp",
+        muscleImg: "../Images/WorkoutImages/chest_0.webp",
         muscleName: "Chest"
     },
     {
-        muscleImg: "WorkoutImages/upperback.webp",
+        muscleImg: "../Images/WorkoutImages/upperback.webp",
         muscleName: "Upper Back"
     },
     {
-        muscleImg: "WorkoutImages/lats_0.webp",
+        muscleImg: "../Images/WorkoutImages/lats_0.webp",
         muscleName: "Lats"
     },
     {
-        muscleImg: "WorkoutImages/lowerback.webp",
+        muscleImg: "../Images/WorkoutImages/lowerback.webp",
         muscleName: "Lower Back"
     },
     {
-        muscleImg: "WorkoutImages/biceps_0.webp",
+        muscleImg: "../Images/WorkoutImages/biceps_0.webp",
         muscleName: "Biceps"
     },
     {
-        muscleImg: "WorkoutImages/triceps_0.webp",
+        muscleImg: "../Images/WorkoutImages/triceps_0.webp",
         muscleName: "Triceps"
     },
     {
-        muscleImg: "WorkoutImages/forearms_0.webp",
+        muscleImg: "../Images/WorkoutImages/forearms_0.webp",
         muscleName: "Forearms"
     },
     {
-        muscleImg: "WorkoutImages/obliques.webp",
+        muscleImg: "../Images/WorkoutImages/obliques.webp",
         muscleName: "Obliques"
     },
     {
-        muscleImg: "WorkoutImages/hipflexors.webp",
+        muscleImg: "../Images/WorkoutImages/hipflexors.webp",
         muscleName: "Hip Flexors"
     },
     {
-        muscleImg: "WorkoutImages/glutes_0.webp",
+        muscleImg: "../Images/WorkoutImages/glutes_0.webp",
         muscleName: "Glutes"
     },
     {
-        muscleImg: "WorkoutImages/itband.webp",
+        muscleImg: "../Images/WorkoutImages/itband.webp",
         muscleName: "IT Band"
     },
     {
-        muscleImg: "WorkoutImages/quads_1.webp",
+        muscleImg: "../Images/WorkoutImages/quads_1.webp",
         muscleName: "Quads"
     },
     {
-        muscleImg: "WorkoutImages/adductors.webp",
+        muscleImg: "../Images/WorkoutImages/adductors.webp",
         muscleName: "Adductors"
     },
     {
-        muscleImg: "WorkoutImages/hamstrings_0.webp",
+        muscleImg: "../Images/WorkoutImages/hamstrings_0.webp",
         muscleName: "Hamstrings"
     },
     {
-        muscleImg: "WorkoutImages/calves_0.webp",
+        muscleImg: "../Images/WorkoutImages/calves_0.webp",
         muscleName: "Calves"
     },
     {
-        muscleImg: "WorkoutImages/plantarfascia.webp",
+        muscleImg: "../Images/WorkoutImages/plantarfascia.webp",
         muscleName: "Plantar Fascia"
     },
     {
-        muscleImg: "WorkoutImages/palmarfacsia.webp",
+        muscleImg: "../Images/WorkoutImages/palmarfacsia.webp",
         muscleName: "Palmar Fascia"
     },
 ];

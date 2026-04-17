@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness App</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body class="home-body">
+    <nav>
+        <h1><span style="color: #0058ff;">Fitness</span>App</h1>
+            <ul>
+                <li><a href="#" class="navbar-tab active">Home</a></li>
+                <li><a href="" class="navbar-tab no-event-tab">Workout</a>
+                <ul class="dropdown1">
+                    <li><a href="workout.html#no-equipment" class="dropdown-tab">No Equipment</a></li>
+                    <li><a href="workout.html#with-equipment" class="dropdown-tab">With Equipment</a></li>
+                </ul>
+                </li>
+                <li><a href="" class="navbar-tab no-event-tab">Plans</a>
+                <ul class="dropdown2">
+                    <li><a href="" class="dropdown-tab">Generate Plan</a></li>
+                    <li><a href="" class="dropdown-tab">My Plans</a></li>
+                </ul>
+                </li>
+                <li><a href="about.html" class="navbar-tab">About</a></li>
+            </ul>
+    </nav>
+    <main class="home-main">
+        <div class="left-section">
+            <div class="hero-section">
+                <h1>Build Your <span style="color: #0058ff;">Personalized</span><br> Workout Plan</h1>
+                <p>Generate structured workout routines based on your goals, experience, and availability.</p>
+                <button onclick="window.location.href='plans.html'">Get started now<i class='bx bx-right-arrow-circle'></i></button>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="../Images/HomeImg.png" alt="">
+        </div>
+    </main>
+    <div class="social-tabs">
+        <div class="tab">
+            <i class='bx bxl-instagram tab-media-icon'></i><p class="tab-media">Flex_Fitness</p>
+        </div>
+        <div class="tab">
+            <i class='bx bxl-facebook tab-media-icon'></i><p class="tab-media">Felx_Fitness</p>
+        </div>
+        <div class="tab">
+            <i class='bx bxl-twitter tab-media-icon'></i><p class="tab-media">Felx_Fitness</p>
+        </div>
+    </div>
+    <div class="explore-content">
+        <div class="left-explore-content">
+            <img src="../Images/ExploreContentImg1.webp" alt="" class="explore-content-img1">
+            <img src="../Images/ExploreContentImg2.webp" alt="" class="explore-content-img2">
+        </div>
+        <div class="right-explore-content">
+            <h3 class="content-heading">Explore our<br>Flex Fitness App</h3>
+            <p class="content-para">Our state-of-the-art facilities ensure that every workout is backed by topnotch equipment, empowering you to reach your fitness goals.</p>
+            <button onclick="window.location.href='plans.html'" class="content-button">Generate Plans</button>
+        </div>
+    </div>
+    <div class="workout-content">
+        <div class="left-workout-content">
+            <h3 class="content-heading">Our world-class<br>workout sessions</h3>
+            <p class="content-para">Enjoy tailored sessions, blending strength training, invigorating yoga, and a spectrum of dynamic workouts.</p>
+            <button onclick="window.location.href='workout.html#no-equipment'" class="content-button">Start Workout</button>
+        </div>
+        <div class="right-workout-content">
+            <div class="content-box">
+                <div class="content-box-img">
+                    <img src="../Images/WorkoutContentImg1.webp" alt="" class="content-img">
+                </div>
+                <div class="content-box-name">
+                    <p class="content-name">Strength training</p>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content-box-img">
+                    <img src="../Images/WorkoutContentImg2.webp" alt="" class="content-img">
+                </div>
+                <div class="content-box-name">
+                    <p class="content-name">CrossFit</p>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content-box-img">
+                    <img src="../Images/WorkoutContentImg3.webp" alt="" class="content-img">
+                </div>
+                <div class="content-box-name">
+                    <p class="content-name">Yoga</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quote-section">
+        <img src="../Images/HomeImg2" alt="" class="quote-bg-img">
+        <div class="quote-content">
+            <div class="quote-text-container">
+                <i class='bx bxs-quote-left open-quote'></i>
+                <p class="hero-line">IF YOU ARE WAITING FOR THE<br><span style="margin-left: 40px;"></span>RIGHT TIME IT'S NOW</p>
+                <i class='bx bxs-quote-right close-quote'></i>
+            </div>
+            <button class="quote-btn">Get started now!</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="left-footer">
+            <img src="../Images/logo.png" alt="">
+            <p>Discover a fitness haven with diverse workouts, dedicated to empowering everyone on their wellness journey.</p>
+        </div>
+        <div class="right-footer">
+            <div class="grid">
+                <div class="grid-items"><a href="">Support </a></div>
+                <div class="grid-items"><a href="">About</a></div>
+                <div class="grid-items"><a href="">FAQ</a></div>
+                <div class="grid-items"><a href="">Privacy & policy</a></div>
+                <div class="grid-items"><a href="">Terms</a></div>
+                <div class="grid-items"><a href="">Book a call</a></div>
+            </div>
+            <p>Follow us on</p>
+            <div class="media-div">
+                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+                <a href=""><i class='bx bxl-whatsapp' ></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
