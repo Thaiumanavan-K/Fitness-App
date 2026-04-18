@@ -1,27 +1,27 @@
 const withEquipment = [
     {
-        img:"Images/Shoulder&ArmImg.jpg",
+        img:"./Images/Shoulder&ArmImg.jpg",
         title:"Shoulders and Arms",
         desc:"Build explosive upper-body power and sleeve-stretching definition by targeting the deltoids, biceps, and triceps with high-intensity isolation.",
         
 
     },
     {
-        img:"Images/Chest&BackImg.jpg",
+        img:"./Images/Chest&BackImg.jpg",
         title:"Chest and Back",
         desc:"Develop a broad, powerful torso by blasting your pectorals and latissimus dorsi with heavy, compound movements designed for maximum growth.",
         
 
     },
     {
-        img:"Images/LegsImg.jpg",
+        img:"./Images/LegsImg.jpg",
         title:"Legs",
         desc:"Build a solid foundation and explosive lower-body strength with intense quad, hamstring, and glute exercises that push your limits.",
         
 
     },
     {
-        img:"Images/AbsImg.jpg",
+        img:"./Images/AbsImg.jpg",
         title:"Abs and Core",
         desc:"Sculpt a rock-solid core and improve overall stability with these high-intensity abdominal and oblique workouts.",
         
