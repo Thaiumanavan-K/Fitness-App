@@ -1,34 +1,34 @@
 const withEquipment = [
     {
-        img:"./Images/Shoulder&ArmImg.jpg",
-        title:"Shoulders and Arms",
-        desc:"Build explosive upper-body power and sleeve-stretching definition by targeting the deltoids, biceps, and triceps with high-intensity isolation.",
-        
+        img: "Images/Shoulder&ArmImg.jpg",
+        title: "Shoulders and Arms",
+        desc: "Build explosive upper-body power and sleeve-stretching definition by targeting the deltoids, biceps, and triceps with high-intensity isolation.",
+
 
     },
     {
-        img:"./Images/Chest&BackImg.jpg",
-        title:"Chest and Back",
-        desc:"Develop a broad, powerful torso by blasting your pectorals and latissimus dorsi with heavy, compound movements designed for maximum growth.",
-        
+        img: "Images/Chest&BackImg.jpg",
+        title: "Chest and Back",
+        desc: "Develop a broad, powerful torso by blasting your pectorals and latissimus dorsi with heavy, compound movements designed for maximum growth.",
+
 
     },
     {
-        img:"./Images/LegsImg.jpg",
-        title:"Legs",
-        desc:"Build a solid foundation and explosive lower-body strength with intense quad, hamstring, and glute exercises that push your limits.",
-        
+        img: "Images/LegsImg.jpg",
+        title: "Legs",
+        desc: "Build a solid foundation and explosive lower-body strength with intense quad, hamstring, and glute exercises that push your limits.",
+
 
     },
     {
-        img:"./Images/AbsImg.jpg",
-        title:"Abs and Core",
-        desc:"Sculpt a rock-solid core and improve overall stability with these high-intensity abdominal and oblique workouts.",
-        
+        img: "Images/AbsImg.jpg",
+        title: "Abs and Core",
+        desc: "Sculpt a rock-solid core and improve overall stability with these high-intensity abdominal and oblique workouts.",
+
 
     },
 ];
-for(let i=0;i<withEquipment.length;i++){
+for (let i = 0; i < withEquipment.length; i++) {
     const exercise = document.querySelector(".exercises");
     exercise.innerHTML += `
     <div class="exercise">
@@ -47,7 +47,7 @@ for(let i=0;i<withEquipment.length;i++){
                 </div>
     `;
 }
-function showNoEquipment(){
+function showNoEquipment() {
     const noEq = document.querySelector(".no-equipment-container");
     const withEq = document.querySelector(".with-equipment-container");
     if (noEq && withEq) {
@@ -56,7 +56,7 @@ function showNoEquipment(){
     }
 }
 
-function showWithEquipment(){
+function showWithEquipment() {
     const noEq = document.querySelector(".no-equipment-container");
     const withEq = document.querySelector(".with-equipment-container");
     if (noEq && withEq) {
