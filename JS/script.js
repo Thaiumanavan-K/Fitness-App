@@ -1,110 +1,52 @@
-const workouts = [
+const withEquipment = [
     {
-        muscleImg: "../Images/WorkoutImages/neck.webp",
-        muscleName: "Neck"
+        img:"../Images/Shoulder&ArmImg.jpg",
+        title:"Shoulders and Arms",
+        desc:"Build explosive upper-body power and sleeve-stretching definition by targeting the deltoids, biceps, and triceps with high-intensity isolation.",
+        
+
     },
     {
-        muscleImg: "../Images/WorkoutImages/traps_0.webp",
-        muscleName: "Traps"
-    },{
-        muscleImg: "../Images/WorkoutImages/shoulders_0.webp",
-        muscleName: "Shoulders"
+        img:"../Images/Chest&BackImg.jpg",
+        title:"Chest and Back",
+        desc:"Develop a broad, powerful torso by blasting your pectorals and latissimus dorsi with heavy, compound movements designed for maximum growth.",
+        
+
     },
     {
-        muscleImg: "../Images/WorkoutImages/chest_0.webp",
-        muscleName: "Chest"
+        img:"../Images/LegsImg.jpg",
+        title:"Legs",
+        desc:"Build a solid foundation and explosive lower-body strength with intense quad, hamstring, and glute exercises that push your limits.",
+        
+
     },
     {
-        muscleImg: "../Images/WorkoutImages/upperback.webp",
-        muscleName: "Upper Back"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/lats_0.webp",
-        muscleName: "Lats"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/lowerback.webp",
-        muscleName: "Lower Back"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/biceps_0.webp",
-        muscleName: "Biceps"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/triceps_0.webp",
-        muscleName: "Triceps"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/forearms_0.webp",
-        muscleName: "Forearms"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/obliques.webp",
-        muscleName: "Obliques"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/hipflexors.webp",
-        muscleName: "Hip Flexors"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/glutes_0.webp",
-        muscleName: "Glutes"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/itband.webp",
-        muscleName: "IT Band"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/quads_1.webp",
-        muscleName: "Quads"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/adductors.webp",
-        muscleName: "Adductors"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/hamstrings_0.webp",
-        muscleName: "Hamstrings"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/calves_0.webp",
-        muscleName: "Calves"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/plantarfascia.webp",
-        muscleName: "Plantar Fascia"
-    },
-    {
-        muscleImg: "../Images/WorkoutImages/palmarfacsia.webp",
-        muscleName: "Palmar Fascia"
+        img:"../Images/AbsImg.jpg",
+        title:"Abs and Core",
+        desc:"Sculpt a rock-solid core and improve overall stability with these high-intensity abdominal and oblique workouts.",
+        
+
     },
 ];
-
-
-const container1 = document.querySelector(".exercise-container-1");
-const container2 = document.querySelector(".exercise-container-2");
-
-if (container1 && container2) {
-    for(let i=0; i<workouts.length; i++){
-        container1.innerHTML += ` <div class="exercise-card">
-                    <div class="img-container">
-                        <img src="${workouts[i].muscleImg}" alt="${workouts[i].muscleName}" class="workout-img">
+for(let i=0;i<withEquipment.length;i++){
+    const exercise = document.querySelector(".exercises");
+    exercise.innerHTML += `
+    <div class="exercise">
+                    <div class="img-section">
+                        <img src="${withEquipment[i].img}" alt="${withEquipment[i].title}">
                     </div>
-                    <div class="caption-container">
-                        <p class="workout-caption">${workouts[i].muscleName}</p>
+                    <div class="detail-section">
+                        <h3>${withEquipment[i].title}</h3>
+                        <p>${withEquipment[i].desc}</p>
+                        <div class="detail-section-links">
+                            <a href="#">Beginner</a>
+                            <a href="#">Intermediate</a>
+                            <a href="#">Expert</a>
+                        </div>
                     </div>
-                </div>`
-        container2.innerHTML += ` <div class="exercise-card">
-                    <div class="img-container">
-                        <img src="${workouts[i].muscleImg}" alt="${workouts[i].muscleName}" class="workout-img">
-                    </div>
-                    <div class="caption-container">
-                        <p class="workout-caption">${workouts[i].muscleName}</p>
-                    </div>
-                </div>`
-    }
+                </div>
+    `;
 }
-
 function showNoEquipment(){
     const noEq = document.querySelector(".no-equipment-container");
     const withEq = document.querySelector(".with-equipment-container");
